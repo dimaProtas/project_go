@@ -1,49 +1,55 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"strconv"
+	"strings"
+	"time"
+)
 
-//Объявление функции в Golang
-// func main() {
-// 	random := rand.Intn(100)
-// 	fmt.Println("Random - ", random, "\nSumNum: ", sumNum(random, 2))
+// Объявление функции в Golang
+func task_1() {
+	random := rand.Intn(100)
+	fmt.Println("Random - ", random, "\nSumNum: ", sumNum(random, 2))
 
-// 	timeUnix := time.Unix(1729935354, 0)
-// 	fmt.Printf("timeUnix: %v - %[1]T\n", timeUnix)
+	timeUnix := time.Unix(1729935354, 0)
+	fmt.Printf("timeUnix: %v - %[1]T\n", timeUnix)
 
-// 	str := strings.Contains("Strings my bmw motocikle", "bmw")
-// 	fmt.Println("фугкция Contains: ", str)
+	str := strings.Contains("Strings my bmw motocikle", "bmw")
+	fmt.Println("фугкция Contains: ", str)
 
-// 	//Atoi конвертирует строку в число и возвращает два результата
-// 	num, err := strconv.Atoi("10")
-// 	fmt.Println("Atoi: ", num, " - ", err)
+	//Atoi конвертирует строку в число и возвращает два результата
+	num, err := strconv.Atoi("10")
+	fmt.Println("Atoi: ", num, " - ", err)
 
-// 	//func Println(a ...interface{}) (n int, err error)
-// 	// Функция Println принимает один параметр а, но вы уже видели, что передача нескольких аргументов также возможна. Кроме того,
-// 	// вы можете передать функции Println переменное количество аргументов, на данную особенность указывает многоточие (...).
-// 	// Для этого есть специальный термин — вариативная функция, которой является Println. Параметр а является набором аргументов,
-// 	// передаваемых функции. О вариативных функциях более детально поговорим в одном из следующих уроков.
-// }
+	//func Println(a ...interface{}) (n int, err error)
+	// Функция Println принимает один параметр а, но вы уже видели, что передача нескольких аргументов также возможна. Кроме того,
+	// вы можете передать функции Println переменное количество аргументов, на данную особенность указывает многоточие (...).
+	// Для этого есть специальный термин — вариативная функция, которой является Println. Параметр а является набором аргументов,
+	// передаваемых функции. О вариативных функциях более детально поговорим в одном из следующих уроков.
+}
 
-// func sumNum(n int, b int) int {
-// 	res := n + b
-// 	return res
-// }
+func sumNum(n int, b int) int {
+	res := n + b
+	return res
+}
 
 // Создание функции в Golang.
-// func kelvinToCelsius(k float64) (float64, string) {
-// 	k -= 273.15
-// 	str := "Hello world"
-// 	return k, str
-// }
+func kelvinToCelsiusTask_2(k float64) (float64, string) {
+	k -= 273.15
+	str := "Hello world"
+	return k, str
+}
 
-// func main() {
-// 	kelvin := 294.0
-// 	kelvin2 := 233.0
-// 	celsius, str := kelvinToCelsius(kelvin)
-// 	celsius2, str2 := kelvinToCelsius(kelvin2)
-// 	fmt.Printf("Kelvin = %v, Celsius = %-2.4v °C, sring = %v\n", kelvin, celsius, str)
-// 	fmt.Printf("Kelvin = %v, Celsius = %-2.4v °C, sring = %v\n", kelvin2, celsius2, str2)
-// }
+func task_2() {
+	kelvin := 294.0
+	kelvin2 := 233.0
+	celsius, str := kelvinToCelsiusTask_2(kelvin)
+	celsius2, str2 := kelvinToCelsiusTask_2(kelvin2)
+	fmt.Printf("Kelvin = %v, Celsius = %-2.4v °C, sring = %v\n", kelvin, celsius, str)
+	fmt.Printf("Kelvin = %v, Celsius = %-2.4v °C, sring = %v\n", kelvin2, celsius2, str2)
+}
 
 // Итоговое задание для проверки:
 // Используйте Go Playground и модифицируйте Листинг 1 для добавления дополнительных функций конвертирования температуры:
@@ -67,7 +73,7 @@ func kelvinToFahrenheit(k float64) float64 {
 	return f
 }
 
-func main() {
+func task_3() {
 	// task_1
 	celsius := 27.0
 	fahrenheit := celsiusToFahrenheit(celsius)
@@ -77,4 +83,10 @@ func main() {
 	fahrenheit2 := 0
 	kelvin := kelvinToFahrenheit(float64(fahrenheit2))
 	fmt.Printf("Kelvin = %v, Fahrenheit = %v\n", kelvin, fahrenheit2)
+}
+
+func main() {
+	// task_1()
+	// task_2()
+	task_3()
 }

@@ -6,27 +6,31 @@ import (
 	"time"
 )
 
-func main() {
-	// // Область видимости переменных в Golang
-	// count := 0
+// // Область видимости переменных в Golang
+func task_1() {
+	count := 0
 
-	// for count < 10 {
-	// 	num := rand.Intn(10) + 1
-	// 	fmt.Println(num)
+	for count < 10 {
+		num := rand.Intn(10) + 1
+		fmt.Println(num)
 
-	// 	count++
-	// }
+		count++
+	}
+}
 
-	// пример 2
-	// if num := rand.Intn(3); num == 0 {
-	// 	fmt.Println("Zero")
-	// } else if num == 1 {
-	// 	fmt.Println("One")
-	// } else {
-	// 	fmt.Println("Two")
-	// }
+// пример 2
+func task_2() {
+	if num := rand.Intn(3); num == 0 {
+		fmt.Println("Zero")
+	} else if num == 1 {
+		fmt.Println("One")
+	} else {
+		fmt.Println("Two")
+	}
+}
 
-	// Локальная и глобальная область видимости (тут с датай поработал)
+// Локальная и глобальная область видимости (тут с датoй поработал)
+func task_3() {
 	for count := 0; count < 10; count++ {
 		year := rand.Intn(9) + 2020
 
@@ -54,4 +58,10 @@ func main() {
 		fmt.Printf("era: %v, %v\n", era, date)
 	}
 
+}
+
+func main() {
+	// task_1()
+	// task_2()
+	task_3()
 }
