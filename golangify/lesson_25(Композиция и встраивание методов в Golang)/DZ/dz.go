@@ -120,4 +120,5 @@ func main() {
 
 	fmt.Println(curiosity.description())
 	fmt.Println(curiosity.message(300))
+	// task_1()
 }
