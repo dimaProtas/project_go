@@ -1,5 +1,6 @@
 package main
 
+// DZ - преподователя!
 import (
 	"errors"
 	"fmt"
