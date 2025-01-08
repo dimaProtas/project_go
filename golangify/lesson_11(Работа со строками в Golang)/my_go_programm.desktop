@@ -1,0 +1,11 @@
+# Настройки ярлыка для запуска програмы в Линукс
+
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Name=MyGoApp
+Comment=My Go CLI application
+Exec=/home/dima_protasevich/main
+Terminal=true
+Type=Application
+Categories=Utility;

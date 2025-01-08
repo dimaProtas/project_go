@@ -1,0 +1,11 @@
+Spaceline         , Days, Trip type, Price
+Space Adventures  , 25  , One-way   , $  49
+SpaceX            , 33  , One-way   , $  42
+SpaceX            , 36  , One-way   , $  40
+SpaceX            , 45  , Round-trip, $  72
+Virgin Galactic   , 36  , One-way   , $  40
+Space Adventures  , 45  , Round-trip, $  72
+SpaceX            , 45  , Round-trip, $  72
+Virgin Galactic   , 45  , One-way   , $  36
+Space Adventures  , 38  , One-way   , $  39
+Space Adventures  , 29  , Round-trip, $  90
